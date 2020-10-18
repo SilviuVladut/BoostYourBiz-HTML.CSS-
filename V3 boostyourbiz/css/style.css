@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700');
+
+.logo img{
+    height: 50px;
+    margin-top: -60px;
+    margin-bottom: -50px;  
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Markazi', sans-serif;
+    color: #3b6978;
+    scroll-behavior: smooth;
+}
+
+nav-link{
+    font-size: 110%;
+    color: #4e4e4e !important;
+}
+.nav-link:hover {
+    color: #3b6978 !important;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #3b6978;
+    transition: color 0.5s, border 0.5s;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 72%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+    font-size: 250%;
+    text-shadow: 1px 1px 15px #204051;
+}
+
+.carousel-ineer img {
+    height: 500px;
+    width: 100%;
+}
+
+/* bara contact */
+
+.infobar{
+    font-size: 15px;
+   display: inline-block;
+    margin: 3px 0 3px 0;   
+    color: #ffffff;
+    background-color: #3b6978;
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+}
+.infobar:hover{
+    color: #3b6978;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.icon{
+    
+    font-size: 20px;
+    margin-right: 5px;
+    vertical-align: text-bottom; /* am aliniat cu textul */
+}
+
+
+.backr{
+    background-color: #5191a6;
+}
+
+.mail{
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 25%;   
+}
+
+.tel{
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 15px;
+}
+
+/* design buton + sectiune citat  */
+.butonel{
+    font-size: 20px;
+    border: 1px solid #5191a6;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #3b6978;
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+    
+}
+.butonel:hover{
+    color: #5191a6;
+    text-decoration: none;
+    background-color: white;
+    transition: background-color 0.6s, border 0.6s, color 0.6s;
+}
+
+/* despre noi */
+
+.welcome {
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.display-4 {
+    font-size: 250%;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    position: relative;
+}
+
+.display-4::after {
+    background-color: #5191a6; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 50px;
+}
+
+/* coloanele (3) */
+.serviceBox{
+    padding-left: 30px;
+    position: relative;
+}
+.serviceBox:before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: #3b6978;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    z-index: 1;
+}
+.serviceBox .service-icon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #3b6978;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 1;
+}
+.serviceBox .service-content{
+    padding: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d5d5d5 #d5d5d5 #3f4147;
+    position: relative;
+    transition: all 0.4s ease-in-out 0s;
+}
+.serviceBox:hover .service-content{
+    background: #25414a;
+    border-color: #25414a;
+}
+.serviceBox .title{
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 30px;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out 0s;
+}
+.serviceBox:hover .title{
+    color: #fff;
+}
+.serviceBox .description{
+    font-size: 14px;
+    color: #305561;
+    margin: 0;
+}
+
+.serviceBox:hover .description{
+    color: #fff;
+}
+
+.serviceBox .read-more{
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    line-height: 30px;
+    background: #3b6978;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+    text-align: center;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
+@media only screen and (max-width:990px){
+    .serviceBox{ margin-bottom: 50px; }
+}
+
+/* countere */
+.distantare{
+    margin-top: 35px;
+}
+
+.demo{ background: #d7e6eb; }
+.counter{
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+.counter .counter-content{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 22px 0;
+    margin: 0 auto 30px;
+    z-index: 1;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.counter .counter-content:before{
+    content: "";
+    width: 122%;
+    height: 122%;
+    border-radius: 50%;
+    border: 20px solid #f19f48;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.counter .counter-content:after{
+    content: "";
+    border-top: 16px solid #f19f48;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.counter .counter-icon{
+    display: block;
+    font-size: 50px;
+    color: #f19f48;
+    line-height: 50px;
+}
+.counter .counter-value{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.7);
+    line-height: 130px;
+}
+.counter .title{
+    display: inline-block;
+    padding: 2px 25px;
+    background: #f19f48;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 35px;
+}
+
+.counter.dblue .counter-content:before{
+    border-color: #3b6978;
+    border-bottom-color: transparent;
+}
+.counter.dblue .counter-content:after{ border-top-color: #3b6978; }
+.counter.dblue .counter-icon{ color: #3b6978; }
+.counter.dblue .title{ background: #3b6978; }
+
+.counter.blue .counter-content:before{
+    border-color: #4d9fcf;
+    border-bottom-color: transparent;
+}
+.counter.blue .counter-content:after{ border-top-color: #4d9fcf; }
+.counter.blue .counter-icon{ color: #4d9fcf; }
+.counter.blue .title{ background: #4d9fcf; }
+
+/* pachete preturi */
+
+.btn2{
+    color: #3b6978;
+    border-color: #3b6978;
+}
+
+.btn2:hover {
+    background-color: #3b6978;
+    border-color: #3b6978;
+    
+}
+
+.btn3 {
+    background-color: #5191a6;
+    border-color: #5191a6;
+}
+
+.btn3:hover {
+    background-color: #3b6978;
+}
+
+.pachete {
+    margin-top: -20px;
+}
+.links  {
+    text-decoration: none;
+}
+
+/* contact */
+
+.distantare2{
+    top: -20px;
+    margin-bottom: -30px;
+}
+
+.serviceBox2{
+    text-align: center;
+}
+.serviceBox2 .service-icon2{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 40px;
+    color: #434163;
+    margin: 20px auto;
+    position: relative;
+}
+.serviceBox2 .service-icon2:before,
+.serviceBox2 .service-icon2:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    transition: all 0.33s ease-out 0s;
+}
+.serviceBox2 .service-icon2:before{
+    border: 2px solid #00a79c;
+    top: -4px;
+}
+.serviceBox2 .service-icon2:after{
+    border: 2px solid #ff794a;
+    top: 4px;
+}
+.serviceBox2:hover .service-icon2:before{
+    top: 4px;
+}
+.serviceBox2:hover .service-icon2:after{
+    top: -4px;
+}
+.serviceBox2 .title2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #434163;
+    margin-bottom: 15px;
+}
+.serviceBox2 .description2{
+    font-size: 14px;
+    color: #666;
+}
+@media only screen and (max-width: 990px){
+    .serviceBox{ margin-bottom: 30px; }
+}
+
+/* footer */
+footer img {
+    height: 90px;
+    margin-top: -45px;
+    margin-bottom: -40px;
+}
+
+footer{
+    background-color: #305561;
+    color: #ffffff;
+    padding-top: 2rem;
+}
+
+hr.light {
+    border-top: 1px solid white;
+    width: 60%;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+footer a:hover{
+    color: #3b6978;
+}
+
+/* media queries */
+/*Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+*/
+
+@media (min-width: 360px) { 
+    .mail {
+        margin-left: 15%;
+        
+    }
+    
+    .tel {
+        margin-left: 27%;
+    }
+
+    .carousel-caption h1 {
+        margin-top: -20%;
+        font-size: 200%;   }
+    .butonel{
+        font-size: 100%;
+    }
+    
+    .display-4 {
+        font-size: 190%;
+    }
+    
+    .scris p{
+        font-size: 100%;
+        
+    }
+    
+}
+
+@media (min-width: 576px) {
+
+    .tel {
+        margin-left: 10px;
+    }
+
+}
+
+
+@media (min-width: 768px) { 
+
+    .mail {
+        margin-left: 20%;
+    }
+        
+    .btn2{
+        font-size: 15px;
+    }
+    
+}
+
+
+@media (min-width: 992px) {
+
+    .mail{
+        margin-left: 30%;
+    }
+    
+    .carousel-caption h1 {
+        margin-top: 0;
+           }
+}
+
+
+@media (min-width: 1200px) {  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
